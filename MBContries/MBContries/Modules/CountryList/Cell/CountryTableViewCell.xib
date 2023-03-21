@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="countryCellIdentifier" rowHeight="80" id="KGk-i7-Jjw" customClass="CountryTableViewCell" customModule="MBContries" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="293.66666666666669" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icloud.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TuP-xa-yqt">
+                        <rect key="frame" x="6" y="9.3333333333333321" width="60" height="60.333333333333343"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Me4-bM-4PZ"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G6V-5I-mRY">
+                        <rect key="frame" x="79.666666666666671" y="7" width="199.66666666666663" height="67"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="VMo-BT-bDd">
+                                <rect key="frame" x="0.0" y="0.0" width="199.66666666666666" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO8-ug-veK">
+                                        <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQy-0U-1QV">
+                                        <rect key="frame" x="168.66666666666669" y="0.0" width="31" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-k9-qXy">
+                                <rect key="frame" x="0.0" y="25" width="199.66666666666666" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Code:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAT-iS-W50">
+                                        <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGc-9T-6SA">
+                                        <rect key="frame" x="168.66666666666669" y="0.0" width="31" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="nfi-Ak-giP">
+                                <rect key="frame" x="0.0" y="50" width="199.66666666666666" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Code:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHN-RS-Xzu">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwA-Sf-WWo">
+                                        <rect key="frame" x="168.66666666666669" y="0.0" width="31" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TuP-xa-yqt" secondAttribute="bottom" constant="8" id="AIR-mB-Ivo"/>
+                    <constraint firstItem="G6V-5I-mRY" firstAttribute="leading" secondItem="TuP-xa-yqt" secondAttribute="trailing" constant="13.666666666666629" id="Cmu-Ig-HZa"/>
+                    <constraint firstItem="G6V-5I-mRY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="ESS-e7-ITm"/>
+                    <constraint firstItem="TuP-xa-yqt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Wyq-Sz-JSQ"/>
+                    <constraint firstAttribute="bottom" secondItem="G6V-5I-mRY" secondAttribute="bottom" constant="6" id="Y9h-ZD-oTt"/>
+                    <constraint firstItem="TuP-xa-yqt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="YI2-9m-CJb"/>
+                    <constraint firstAttribute="trailing" secondItem="G6V-5I-mRY" secondAttribute="trailing" constant="14.333333333333428" id="zed-8v-iPm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" cyan="0.03861618042" magenta="0.02148352936" yellow="0.01" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+            <connections>
+                <outlet property="countryCodeLabel" destination="oGc-9T-6SA" id="vTL-rc-3zR"/>
+                <outlet property="countryNameLabel" destination="CQy-0U-1QV" id="bJQ-eF-IZg"/>
+                <outlet property="flagImage" destination="TuP-xa-yqt" id="epz-XB-DMo"/>
+                <outlet property="phoneCodeLabel" destination="OwA-Sf-WWo" id="Tqt-tK-Xvy"/>
+            </connections>
+            <point key="canvasLocation" x="1.5384615384615383" y="33.412322274881518"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icloud.fill" catalog="system" width="128" height="90"/>
+    </resources>
+</document>

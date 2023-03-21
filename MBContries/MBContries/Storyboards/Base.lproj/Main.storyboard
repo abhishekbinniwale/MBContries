@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YpQ-cA-91p">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Coountries-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CountryListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CountryListViewController" customModule="MBContries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yQX-T7-vg1">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="m7f-l5-gGh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yjX-TM-U5f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yQX-T7-vg1" secondAttribute="trailing" id="HHy-7C-8EQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yQX-T7-vg1" secondAttribute="bottom" id="PwY-cX-LaI"/>
+                            <constraint firstItem="yQX-T7-vg1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yc0-Qq-FZt"/>
+                            <constraint firstItem="yQX-T7-vg1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yp3-DK-XR2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Coountries" id="Int-iC-G5K"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="countryListView" destination="yQX-T7-vg1" id="u2C-Qh-dQV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.76923076923072" y="3.5545023696682461"/>
+        </scene>
+        <!--Country Details View Controller-->
+        <scene sceneID="RZJ-1z-yxu">
+            <objects>
+                <viewController storyboardIdentifier="CountryDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ceK-22-Dxu" customClass="CountryDetailsViewController" customModule="MBContries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RhQ-i5-8VK">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aav-HB-mTA">
+                                <rect key="frame" x="0.0" y="283" width="390" height="527"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is no provinces for this country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gss-xn-CDy">
+                                        <rect key="frame" x="67.666666666666686" y="145" width="255" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="yhn-Yi-rX2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gss-xn-CDy" firstAttribute="top" secondItem="aav-HB-mTA" secondAttribute="top" constant="145" id="0Ks-Yp-Whn"/>
+                                    <constraint firstItem="gss-xn-CDy" firstAttribute="centerX" secondItem="aav-HB-mTA" secondAttribute="centerX" id="mkM-dw-pAC"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2wN-bi-HcG">
+                                <rect key="frame" x="16" y="95" width="358" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="4Wp-8Q-MHs"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gPe-Ef-Mav">
+                                <rect key="frame" x="0.0" y="283" width="390" height="527"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ceK-22-Dxu" id="qdy-oh-Krf"/>
+                                    <outlet property="delegate" destination="ceK-22-Dxu" id="zCD-hX-msZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3K1-xC-ef1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gPe-Ef-Mav" firstAttribute="leading" secondItem="3K1-xC-ef1" secondAttribute="leading" id="3dY-WM-Rqp"/>
+                            <constraint firstItem="3K1-xC-ef1" firstAttribute="trailing" secondItem="2wN-bi-HcG" secondAttribute="trailing" constant="16" id="8R8-GK-VNd"/>
+                            <constraint firstItem="3K1-xC-ef1" firstAttribute="bottom" secondItem="aav-HB-mTA" secondAttribute="bottom" id="9dS-Lu-vCy"/>
+                            <constraint firstItem="2wN-bi-HcG" firstAttribute="leading" secondItem="3K1-xC-ef1" secondAttribute="leading" constant="16" id="9wC-bh-oBG"/>
+                            <constraint firstItem="gPe-Ef-Mav" firstAttribute="top" secondItem="2wN-bi-HcG" secondAttribute="bottom" constant="8" symbolic="YES" id="Shs-8H-fxe"/>
+                            <constraint firstItem="2wN-bi-HcG" firstAttribute="top" secondItem="3K1-xC-ef1" secondAttribute="top" constant="4" id="e6F-P1-0qs"/>
+                            <constraint firstItem="3K1-xC-ef1" firstAttribute="trailing" secondItem="gPe-Ef-Mav" secondAttribute="trailing" id="hZC-cb-PnP"/>
+                            <constraint firstItem="aav-HB-mTA" firstAttribute="top" secondItem="2wN-bi-HcG" secondAttribute="bottom" constant="8" symbolic="YES" id="iO8-tJ-dA5"/>
+                            <constraint firstItem="3K1-xC-ef1" firstAttribute="bottom" secondItem="gPe-Ef-Mav" secondAttribute="bottom" id="kVu-ce-0Py"/>
+                            <constraint firstItem="aav-HB-mTA" firstAttribute="leading" secondItem="3K1-xC-ef1" secondAttribute="leading" id="li2-IY-Eye"/>
+                            <constraint firstItem="3K1-xC-ef1" firstAttribute="trailing" secondItem="aav-HB-mTA" secondAttribute="trailing" id="moT-Eq-9Nt"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="countryImageView" destination="2wN-bi-HcG" id="M6Z-kR-iTs"/>
+                        <outlet property="emptyView" destination="aav-HB-mTA" id="m6z-uk-b4w"/>
+                        <outlet property="provinceListView" destination="gPe-Ef-Mav" id="kcc-6H-C05"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Foi-sE-w5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853.8461538461538" y="3.5545023696682461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jtn-R1-Nfv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YpQ-cA-91p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3fV-cu-dAG">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="L7O-yn-7ed"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYp-gq-qdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.538461538461537" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
